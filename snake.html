@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>今天天气不错</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    
+    #map {
+      width: 800px;
+      height: 600px;
+      background-color: #CCCCCC;
+      position: relative;
+    }
+    
+    #map div {
+      /*用于设置地图中的食物，小蛇的盒子定位*/
+      position: absolute;
+    }
+  </style>
+</head>
+<body>
+
+<div id="map"></div>
+
+<!--使用第三方库需要先进行引入操作-->
+<!--requirejs在引入后需要设置data-main属性，用于设置当前程序执行的入口文件-->
+<!--当页面加载到下面这一句话时，首先加载requirejs的文件，然后直接读取入口文件中的代码-->
+<!--主文件的默认后缀名为.js，所以设置主文件路径时，写不写.js均可-->
+<!--<script src="lib/require.js" data-main="js/main.js"></script>-->
+<script src="lib/require.js" data-main="js/main"></script>
+
+
+</body>
+</html>
